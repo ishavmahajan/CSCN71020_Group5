@@ -56,9 +56,14 @@ int printShapeMenu() {
 
 int* getTriangleSides(int* triangleSides) {
 	printf_s("Enter the three sides of the triangle: ");
-	for (int i = 0; i < 3; i++)
-	{
-		scanf_s("%d", &triangleSides[i]);
+	for (int i = 0; i < 3; i++) {
+		printf_s("Side %d: ", i + 1);
+		if (scanf_s("%d", &triangleSides[i]) != 1) {
+			printf_s("Invalid input! Please enter a number.\n");
+			while (getchar() != '\n'); // clear invalid input
+			triangleSides[i] = 0; // mark invalid
+		}
 	}
+	
 	return triangleSides;
 }
