@@ -55,15 +55,12 @@ int printShapeMenu() {
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
-
 	printf_s("Enter number: ");
-	if (scanf_s("%1o", &shapeChoice) != 1);
-	{
+	if (scanf_s("%d", &shapeChoice) != 1) {
 		while (getchar() != '\n');
-		return -1;
+		return -1; 
 	}
-
-	return shapeChoice;
+	return shapeChoice; 
 }
 
 int* getTriangleSides(int* triangleSides) {
