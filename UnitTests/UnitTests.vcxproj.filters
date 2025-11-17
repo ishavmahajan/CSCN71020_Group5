@@ -18,7 +18,7 @@
     <ClCompile Include="UnitTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="..\PolygonChecker\triangleSolver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="angleFinder.cpp">
