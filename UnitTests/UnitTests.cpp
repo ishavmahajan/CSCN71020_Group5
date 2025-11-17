@@ -31,5 +31,22 @@ namespace UnitTests
             Assert::AreEqual("Isosceles triangle", result);
         }
 
+        TEST_METHOD(TestZeroSide)
+        {
+            char* result = analyzeTriangle(0, 4, 5);
+            Assert::AreEqual("The sides cannot form a triangle", result);
+        }
+
+        TEST_METHOD(TestNegativeSide)
+        {
+            char* result = analyzeTriangle(-2, 4, 5);
+            Assert::AreEqual("The sides cannot form a triangle", result);
+        }
+
+        TEST_METHOD(TestBigDifference)
+        {
+            char* result = analyzeTriangle(10, 2, 2);
+            Assert::AreEqual("The sides cannot form a triangle", result);
+        }
 	};
 }
