@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 #include "main.h"
 #include "triangleSolver.h"
@@ -22,6 +23,13 @@ int main() {
 			//printf_s("! %d\n", triangleSidesPtr[0]);
 			char* result = analyzeTriangle(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2]);
 			printf_s("%s\n", result);
+			if ((strcmp(result, "Equilateral triangle") == 0) || (strcmp(result, "Isosceles triangle") == 0) || (strcmp(result, "Scalene triangle") == 0)) {
+				double angleA = 0, angleB = 0, angleC = 0;
+				anglefinder(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2], &angleA, &angleB, &angleC);
+				printf_s("Angle A: %.2lf degrees\n", angleA);
+				printf_s("Angle B: %.2lf degrees\n", angleB);
+				printf_s("Angle C: %.2lf degrees\n", angleC);
+			}
 			break;
 		case 0:
 			continueProgram = false;
