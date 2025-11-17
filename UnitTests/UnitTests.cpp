@@ -1,4 +1,6 @@
 #include "CppUnitTest.h"
+#include "pch.h"
+
 
 extern "C" {
 
