@@ -31,6 +31,13 @@ int main() {
 				printf_s("Angle C: %.2lf degrees\n", angleC);
 			}
 			break;
+		case 2:
+			printf("Rectangle selected.\n");
+			int xpoints[4] = { 0,0,0,0 };
+			int ypoints[4] = { 0,0,0,0 };
+			acceptRectanglePoints( xpoints, ypoints); // validation has been added as well in this. 
+			//Do not change the above case 2**************
+
 		case 0:
 			continueProgram = false;
 			break;
@@ -52,6 +59,7 @@ void printWelcome() {
 
 int printShapeMenu() {
 	printf_s("1. Triangle\n");
+	printf_s("2. Rectangle\n");
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
