@@ -4,6 +4,8 @@
 
 #include "main.h"
 #include "triangleSolver.h"
+#include "acceptRectanglePoints.h"
+#include "anglefinder.h"
 
 int side = 0;
 
@@ -36,6 +38,9 @@ int main() {
 			int xpoints[4] = { 0,0,0,0 };
 			int ypoints[4] = { 0,0,0,0 };
 			acceptRectanglePoints( xpoints, ypoints); // validation has been added as well in this. 
+			rectangleSideLength(xpoints, ypoints);
+			rectangleSidePrint();
+
 			//Do not change the above case 2**************
 
 		case 0:
