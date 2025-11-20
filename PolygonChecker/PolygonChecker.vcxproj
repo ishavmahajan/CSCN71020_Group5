@@ -142,6 +142,7 @@
     <ClCompile Include="acceptRectanglePoints.c" />
     <ClCompile Include="angleFinder.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="rectangleSolver.c" />
     <ClCompile Include="triangleSolver.c" />
   </ItemGroup>
   <ItemGroup>
