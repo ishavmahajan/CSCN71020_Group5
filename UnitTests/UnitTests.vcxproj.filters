@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UnitTests.cpp">
+    <ClCompile Include="Testcases_triangletypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestCases_angleFinder.cpp">
@@ -25,6 +25,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestCases_acceptRectanglePoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Testcases_printShapeMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Testcases_getTriangleSides.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
