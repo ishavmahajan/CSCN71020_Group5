@@ -44,5 +44,8 @@
     <ClInclude Include="acceptRectanglePoints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rectangleSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

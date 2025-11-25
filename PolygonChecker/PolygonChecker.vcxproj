@@ -149,6 +149,7 @@
     <ClInclude Include="acceptRectanglePoints.h" />
     <ClInclude Include="angleFinder.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="rectangleSolver.h" />
     <ClInclude Include="triangleSolver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

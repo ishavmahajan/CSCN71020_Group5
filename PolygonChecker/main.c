@@ -6,6 +6,7 @@
 #include "triangleSolver.h"
 #include "acceptRectanglePoints.h"
 #include "anglefinder.h"
+#include "rectangleSolver.h"
 
 int side = 0;
 
@@ -37,10 +38,28 @@ int main() {
 			printf("Rectangle selected.\n");
 			int xpoints[4] = { 0,0,0,0 };
 			int ypoints[4] = { 0,0,0,0 };
-			acceptRectanglePoints( xpoints, ypoints); // validation has been added as well in this. 
-			rectangleSideLength(xpoints, ypoints);
-			rectangleSidePrint();
+			acceptRectanglePoints( xpoints, ypoints); //validation added too
+			double side1 = RectanglesideLength(xpoints[0], ypoints[0], xpoints[1], ypoints[1]);
+			double side2 = RectanglesideLength(xpoints[1], ypoints[1], xpoints[2], ypoints[2]);
+			double side3 = RectanglesideLength(xpoints[2], ypoints[2], xpoints[3], ypoints[3]);
+			double side4 = RectanglesideLength(xpoints[3], ypoints[3], xpoints[0], ypoints[0]);
+			
+			printSideLengths(side1, side2, side3, side4);
 
+			double diagonal1 = RectangleDiagonalLength(xpoints[0], ypoints[0], xpoints[2], ypoints[2]);
+			double diagonal2 = RectangleDiagonalLength(xpoints[1], ypoints[1], xpoints[3], ypoints[3]);
+			printf("Diagonal 1 is: %.2lf\n", diagonal1);
+			printf("Diagonal 2 is: %.2lf\n", diagonal2);
+
+			char* rectangleresult = analyzeRectangle(side1, side2, side3, side4, diagonal1, diagonal2);
+			printf("%s\n", rectangleresult);
+
+			printf("Perimeter is: %.2lf\n", rectanglePerimeter(side1, side2, side3, side4));
+
+			if (strcmp(rectangleresult, "Valid rectangle") == 0) {
+				printf("Area is: %.2lf\n", rectangleArea(side1, side2));
+			}
+			break;
 			//Do not change the above case 2**************
 
 		case 0:
