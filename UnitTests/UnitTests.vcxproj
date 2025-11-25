@@ -135,7 +135,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>D:\BSCComputerScience\Semester1\SoftwareImplementationandUnitTesting\Project\PolygonChecker\x64\Debug;D:\Implementationsgrup5project\PolygonChecker\x64\Debug;$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>main.obj;angleFinder.obj;triangleSolver.obj;acceptRectanglePoints.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>main.obj;angleFinder.obj;triangleSolver.obj;acceptRectanglePoints.obj;rectangleSolver.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
