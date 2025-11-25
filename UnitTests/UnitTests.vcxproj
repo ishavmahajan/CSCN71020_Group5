@@ -134,7 +134,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>D:\BSCComputerScience\Semester1\SoftwareImplementationandUnitTesting\Project\PolygonChecker\x64\Debug;D:\Implementationsgrup5project\PolygonChecker\x64\Debug;$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\BSCComputerScience\Semester1\SoftwareImplementationandUnitTesting\Project\PolygonChecker\x64\Debug;D:\Project\PolygonChecker\x64\Debug;$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>main.obj;angleFinder.obj;triangleSolver.obj;acceptRectanglePoints.obj;rectangleSolver.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -231,6 +231,7 @@
     </ClCompile>
     <ClCompile Include="TestCases_acceptRectanglePoints.cpp" />
     <ClCompile Include="TestCases_angleFinder.cpp" />
+    <ClCompile Include="TestCases_rectanglePermimeter.cpp" />
     <ClCompile Include="UnitTests.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
