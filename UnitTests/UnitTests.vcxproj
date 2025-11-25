@@ -231,6 +231,7 @@
     </ClCompile>
     <ClCompile Include="TestCases_acceptRectanglePoints.cpp" />
     <ClCompile Include="TestCases_angleFinder.cpp" />
+    <ClCompile Include="TestCases_rectangleArea.cpp" />
     <ClCompile Include="TestCases_rectanglePermimeter.cpp" />
     <ClCompile Include="TestCases_RectanglesideLength.cpp" />
     <ClCompile Include="UnitTests.cpp">
