@@ -36,6 +36,9 @@
     <ClCompile Include="TestCases_rectangleArea.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TestCases_RectangleDiagonalLength.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
