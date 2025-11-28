@@ -26,7 +26,11 @@ double RectangleDiagonalLength(int x1, int y1, int x2, int y2) {
 
 char* analyzeRectangle(double side1, double side2, double side3, double side4, double diagonal1, double diagonal2) {
 		
-	if (side1 == side3 && side2 == side4 && diagonal1 == diagonal2 && (side1 * side1 + side2 * side2 == diagonal1 * diagonal1, 0.001)) {
+	if (side1 == 0 || side2 == 0 || side3 == 0 || side4 == 0) {
+		return "Invalid rectangle"; //added check for zero-length sides
+	}
+		
+	else if(side1 == side3 && side2 == side4 && diagonal1 == diagonal2 && (side1 * side1 + side2 * side2 == diagonal1 * diagonal1, 0.001)) {
 		return "Valid rectangle"; //also added pythragorean theorem check
 	}
 	else {

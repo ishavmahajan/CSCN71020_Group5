@@ -24,7 +24,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestCases_acceptRectanglePoints.cpp">
+    <ClCompile Include="TestCases_analyzeRectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestCases_rectanglePermimeter.cpp">

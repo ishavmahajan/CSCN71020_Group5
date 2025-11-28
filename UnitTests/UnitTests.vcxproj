@@ -229,7 +229,7 @@
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="TestCases_acceptRectanglePoints.cpp" />
+    <ClCompile Include="TestCases_analyzeRectangle.cpp" />
     <ClCompile Include="TestCases_angleFinder.cpp" />
     <ClCompile Include="TestCases_rectangleArea.cpp" />
     <ClCompile Include="TestCases_RectangleDiagonalLength.cpp" />
